@@ -3,41 +3,59 @@ If you want to create a more complex and efficient game like Final Fantasy 1: Da
 Here's a high-level overview of the steps to create a text-based RPG in C++ using SFML:
 
 Step 1: Install SFML and Set Up the Project
-
 Download and install SFML on your system.
 Set up a new C++ project in your favorite Integrated Development Environment (IDE).
-Step 2: Create the Player and Enemy Classes
 
+Step 2: Create the Player and Enemy Classes
 Define classes for the player and enemy characters.
 Implement functions for attacking, taking damage, and other relevant actions.
-Step 3: Design the Game World
 
+Step 3: Design the Game World
 Create a map with different locations using a 2D array or a data structure that represents the game world.
 Assign attributes to each location, such as descriptions, item availability, and enemy spawn rates.
-Step 4: Handle Game Input and Output
 
+Step 4: Handle Game Input and Output
 Implement a game loop to handle player input and update the game state accordingly.
 Display relevant information to the player, such as the game world, player stats, and text-based prompts.
-Step 5: Implement Game Mechanics
 
+Step 5: Implement Game Mechanics
 Develop functions for moving the player between locations and handling encounters with enemies.
 Define mechanics for resting, using items, and managing the player's inventory.
-Step 6: Create Text-Based Battles
 
+Step 6: Create Text-Based Battles
 When the player encounters an enemy, engage them in a text-based battle.
 Allow the player to attack, use items, and have the enemy retaliate.
-Step 7: Implement Game Progression
 
+Step 7: Implement Game Progression
 Create a leveling system that allows the player to gain experience and level up.
 Add quests and interactions with NPCs to advance the game's storyline.
-Step 8: Add Polish and Enhancements
 
+Step 8: Add Polish and Enhancements
 Improve the user interface and user experience by adding colors and ASCII art.
 Handle edge cases and provide error checking for user input.
 Optimize the code for better performance and efficiency.
-Step 9: Test and Debug
 
+Step 9: Test and Debug
 Thoroughly test the game to ensure it works correctly and handle any bugs or issues that arise.
 Please note that creating a game like Final Fantasy 1: Dawn of Souls is still a significant undertaking, even in C++. It requires a good understanding of programming concepts, data structures, algorithms, and game design principles. As you progress with your game development journey, you'll learn more about optimizing and expanding your game further.
 
-Additionally, there are many online resources, tutorials, and game development communities where you can seek guidance and learn from experienced developers. Happy coding, and best of luck with your game development!
+Additionally, there are many online resources, tutorials, and game development communities where you can seek guidance and learn from experienced developers. 
+Happy coding, and best of luck with your game development!
+
+Project Structure:
+my_text_rpg/
+|-- main.cpp
+|-- character.h
+|-- character.cpp
+|-- world.h
+|-- world.cpp
+|-- game_functions.h
+|-- game_functions.cpp
+|-- assets/
+|   |-- fonts/
+|   |-- images/
+|   |-- sounds/
+|-- maps/
+|   |-- map1.txt
+|   |-- map2.txt
+|-- build/

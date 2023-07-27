@@ -1,10 +1,31 @@
-#include "characters.cpp"
+#include "character.cpp"
+#include "location.h"
+#include "world.h"
+#include <iostream>
+#include <string>
+#include <vector>
 
-int main() {
+const int ROWS = 3;
+const int COLS = 3;
+std::vector<std::vector<Location>> gameWorld(ROWS, std::vector<Location>(COLS, Location("", "", false, false, 0)));
+
+
+int main()
+{
+    setupGameWorld();
+
+    int currentRow = 0;
+    int currentCol = 0;
+
+    while (true) {
+        displayLocationInfo(currentRow, currentCol);
+        // ... (remaining code, same as before)
+    }
     Player player("Hero", 100, 20, 10);
     Enemy enemy("Goblin", 50, 10, 5);
 
-    while (player.isAlive() && enemy.isAlive()) {
+    while (player.isAlive() && enemy.isAlive())
+    {
         player.displayStats();
         enemy.displayStats();
 
